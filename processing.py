@@ -32,10 +32,16 @@ def convert_time_format(time_str):
     s, ms = s.split(',')
     return f"{int(h)*3600 + int(m)*60 + int(s)}.{ms}"
 
-audios = glob.glob(".\\audio\\*.wav")
-srts = glob.glob(".\\srt\\*.srt")
-output_dir = ".\\raw"
+# 使用相對路徑取得腳本所在的資料夾
+script_dir = os.path.dirname(os.path.abspath(__file__))
+audio_dir = os.path.join(script_dir, "audio")
+srt_dir = os.path.join(script_dir, "srt")
+output_dir = os.path.join(script_dir, "raw")
 txtLabel = ""
+
+# 使用 glob.glob 來取得符合條件的檔案清單
+audios = glob.glob(os.path.join(audio_dir, "*.wav"))
+srts = glob.glob(os.path.join(srt_dir, "*.srt"))
 
 for i in audios:
     print(i)
