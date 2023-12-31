@@ -52,5 +52,5 @@ if not os.path.exists(output_dir):
 for i in range(0, len(audios)):
     split_audio_by_srt(audios[i], srts[i], output_dir, i+1)
 
-with open(".\\esd.list", 'w', encoding="utf8") as fr:
+with open(os.path.join(script_dir, "esd.list"), 'w', encoding="utf8") as fr:
     fr.writelines(txtLabel)
