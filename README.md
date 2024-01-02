@@ -20,6 +20,7 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 - [x] 可快速處理資料集
 - [x] 支援使用 Whisper 自動標註音檔
 - [x] 支援 TensorBoard 監看訓練狀況
+- [ ] 也許可以做個一鍵部屬到 HuggingFace Spaces??? (待定
 
 ## 畫面
 
