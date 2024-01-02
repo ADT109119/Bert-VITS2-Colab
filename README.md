@@ -1,5 +1,5 @@
 # Bert-VITS2-Colab
-簡單寫一個Colab記事本，方便來使用 Colab 訓練 Bert-VITS2
+簡單寫一個Colab記事本，方便來使用 Colab 訓練 [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Bert-VITS2.ipynb)
 
