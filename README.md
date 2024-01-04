@@ -30,6 +30,26 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 ![上傳資料集](https://github.com/ADT109119/Bert-VITS2-Colab/assets/106337749/9d9d3b8f-8790-425d-b2af-bd633174b08a)
 ![訓練時監看 TensorBoard](https://github.com/ADT109119/Bert-VITS2-Colab/assets/106337749/590e2936-0981-411a-8326-651e2d1bbe2c)
 
+## 音檔切割程式
+
+本專案內有一個以srt切割音檔並生成標註的程式 `processing.py`，若要使用請依照以下的檔案命名方式 **(對應的音檔與字幕取相同的名字 僅副檔名不同)**:
+
+```
+{說話者}_{語言}_{隨編一個編號}.wav
+```
+
+以及將檔案用以下方式存放，音檔存在 `audio` 資料夾，字幕檔存放在 `srt` 資料夾，再執行 `processing.py`。便可以生成 `esd.list` 檔案，以及切分音檔(切分好的音檔放在 `raw` 資料夾中)
+
+```
+├── audio
+│   ├── ****.wav
+│   ├── ...
+├── srt
+│   ├── ****.srt
+│   ├── ...
+├── processing.py
+```
+
 ## 專案技術
 
 - Python
