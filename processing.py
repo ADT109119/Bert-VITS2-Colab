@@ -21,11 +21,14 @@ def split_audio_by_srt(audio_file, srt_file, output_dir, index):
         start_time = convert_time_format(start_time)
         end_time = convert_time_format(end_time)
 
-        output_file = os.path.join(output_dir, f"{index}_{i}.wav")
-        global txtLabel
-        txtLabel = txtLabel + f"{index}_{i}.wav|{character_name}|{lang}|{parts[2]}\n"
-        
-        subprocess.call(['ffmpeg', '-i', audio_file, '-ss', start_time, '-to', end_time, '-ac', '1', output_file])
+        # 考量到訓練資料最好大於2秒 所以新增判斷需大於2秒才會被切分
+        duration = float(end_time) - float(start_time)
+        if duration >= 2:
+            output_file = os.path.join(output_dir, f"{index}_{i}.wav")
+            global txtLabel
+            txtLabel = txtLabel + f"{index}_{i}.wav|{character_name}|{lang}|{parts[2]}\n"
+            
+            subprocess.call(['ffmpeg', '-i', audio_file, '-ss', start_time, '-to', end_time, '-ac', '1', output_file])
 
 def convert_time_format(time_str):
     h, m, s = time_str.split(':')
