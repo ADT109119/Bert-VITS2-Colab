@@ -52,8 +52,13 @@ for i in audios:
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-for i in range(0, len(audios)):
-    split_audio_by_srt(audios[i], srts[i], output_dir, i+1)
+for audio_file in audios:
+    basename = os.path.basename(audio_file).replace(".wav", ".srt")
+    srt_file = os.path.join(srt_dir, basename)
+
+    if srt_file in srts:
+        index = audios.index(audio_file) + 1
+        split_audio_by_srt(audio_file, srt_file, output_dir, index)
 
 with open(os.path.join(script_dir, "esd.list"), 'w', encoding="utf8") as fr:
     fr.writelines(txtLabel)
