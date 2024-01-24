@@ -14,7 +14,7 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 
 ## 目前專案功能及進度
 
-目前支援以下幾種功能
+目前支援以下幾種功能:
 - [x] 無須手動配置環境
 - [x] 自動下載 Bert 等需要的模型
 - [x] 可快速處理資料集
