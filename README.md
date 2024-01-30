@@ -22,6 +22,9 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 - [x] 支援 TensorBoard 監看訓練狀況
 - [x] 一鍵部屬到 HuggingFace Spaces (經測試已能用，但不確定是否有Bug
 
+待完成項目:
+- [ ] 支援中文特化版
+
 ## 畫面
 
 > 操作示意 安裝函式庫>上傳資料集>訓練時監看 TensorBoard
