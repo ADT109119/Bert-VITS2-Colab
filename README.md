@@ -14,13 +14,16 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 
 ## 目前專案功能及進度
 
-目前支援以下幾種功能
+目前支援以下幾種功能:
 - [x] 無須手動配置環境
 - [x] 自動下載 Bert 等需要的模型
 - [x] 可快速處理資料集
 - [x] 支援使用 Whisper 自動標註音檔
 - [x] 支援 TensorBoard 監看訓練狀況
 - [x] 一鍵部屬到 HuggingFace Spaces (經測試已能用，但不確定是否有Bug
+
+待完成項目:
+- [ ] 支援中文特化版
 
 ## 畫面
 
