@@ -20,10 +20,11 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 - [x] 可快速處理資料集
 - [x] 支援使用 Whisper 自動標註音檔
 - [x] 支援 TensorBoard 監看訓練狀況
-- [x] 一鍵部屬到 HuggingFace Spaces (經測試已能用，但不確定是否有Bug
+- [x] 一鍵部屬到 HuggingFace Spaces (中文特化版上不可用
+- [x] 支援中文特化版(2024.01.30 經測試已能用，但不確定是否有Bug)
 
 待完成項目:
-- [ ] 支援中文特化版
+- [ ] 中文特化版一鍵部署HuggingFace
 
 ## 畫面
 
