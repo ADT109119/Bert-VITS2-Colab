@@ -56,6 +56,8 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 
 > 2024/01/16更: 考量到訓練資料最好大於2秒 所以新增判斷需大於2秒才會被切分
 
+> 2024/02/05更: 現在音檔可以使用wav、mp3等格式
+
 ## 專案技術
 
 - Python
