@@ -21,7 +21,7 @@ https://colab.research.google.com/github/ADT109119/Bert-VITS2-colab/blob/main/Be
 - [x] 支援使用 Whisper 自動標註音檔
 - [x] 支援 TensorBoard 監看訓練狀況
 - [x] 一鍵部屬到 HuggingFace Spaces(現已支援一般版與中文特化版)
-- [x] 支援中文特化版(2024.01.30 經測試已能用，但不確定是否有Bug)
+- [x] 支援中文特化版
 
 待完成項目:
 - [ ] 日文特化版(不知道要不要做???
